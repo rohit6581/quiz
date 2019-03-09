@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#00cccc">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:fontFamily="@font/luckiest_guy"
+        android:text="Welcome"
+        android:textAlignment="center"
+        android:textColor="#00001a"
+        android:textSize="45dp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="137dp"
+        android:layout_below="@+id/result"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/q1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/luckiest_guy"
+                android:text="Q1.who is the first prime minister of india?"
+                android:textSize="20dp"
+                tools:fontFamily="@font/luckiest_guy" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/r1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gabriela"
+                    android:text="Jawaharlal Nehru"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Indira Gandhi"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/gabriela"
+                    android:id="@+id/r2"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Q2.who is the current prime minister of india?"
+                android:fontFamily="@font/luckiest_guy"
+                android:textSize="20dp"
+                android:id="@+id/q2"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Narendra Modi"
+                android:textSize="20dp"
+                android:fontFamily="@font/gabriela"
+                android:id="@+id/c1"
+                />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rahul Gandhi"
+                android:textSize="20dp"
+                android:fontFamily="@font/gabriela"
+                android:id="@+id/c2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Q3.who is invented zero?"
+                android:fontFamily="@font/luckiest_guy"
+                android:textSize="20dp"
+                android:id="@+id/q3"/>
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Albert Einstein        "
+                android:textSize="20dp"
+                android:fontFamily="@font/gabriela"
+                android:id="@+id/s1"/>
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aryabhata               "
+                android:textSize="20dp"
+                android:fontFamily="@font/gabriela"
+                android:id="@+id/s2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Q4.who is founder of facebook?"
+                android:fontFamily="@font/luckiest_guy"
+                android:textSize="20dp"
+                android:id="@+id/q4"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mark  Zuckerberg "
+                    android:textSize="20dp"
+                    android:fontFamily="@font/gabriela"
+                    android:id="@+id/r3"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="jeff bezos"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/gabriela"
+                    android:id="@+id/r4"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Q6.who is the chief minister of odisha?"
+                android:fontFamily="@font/luckiest_guy"
+                android:textSize="20dp"
+                android:id="@+id/q5"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Naveen Patnaik"
+                android:textSize="20dp"
+                android:fontFamily="@font/gabriela"
+                android:id="@+id/c3"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nitish Kumar"
+                android:textSize="20dp"
+                android:fontFamily="@font/gabriela"
+                android:id="@+id/c4"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Q6.who is  president of india?"
+                android:fontFamily="@font/luckiest_guy"
+                android:textSize="20dp"
+                android:id="@+id/q6"/>
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ram Nath Kovind        "
+                android:textSize="20dp"
+                android:fontFamily="@font/gabriela"
+                android:id="@+id/s3"/>
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pranab Mukherjee       "
+                android:textSize="20dp"
+                android:fontFamily="@font/gabriela"
+                android:id="@+id/s4"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Finish"
+                android:textSize="25dp"
+                android:background="#507ba8"
+                android:fontFamily="@font/luckiest_guy"
+                android:id="@+id/over"
+                android:cursorVisible="true"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/score"
+        android:layout_marginStart="165dp"
+        android:fontFamily="@font/luckiest_guy"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-137dp"
+        android:fontFamily="@font/luckiest_guy"
+        android:text="Score:"
+        android:textSize="30dp" />
+
+
+</RelativeLayout>
